@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  
+<!-- Mirrored from online-password-generator.dalenryder.com/encrypt.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Jun 2021 19:01:49 GMT -->
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Encrypt and decrypt files online. Easy and fast with Dalenryder Online File Encryptor.">
+    <meta name="author" content="Daniel Maluszczak">
+	<link rel="icon" type="image/png"  href="icon.png">
+	<meta property="og:image" content="title.png" />
+
+    <title>Dalenryder Online File Encryptor</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+
+   
+
+  </head>
+
+  <body class="index" id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <a class="navbar-brand" href="#page-top"><img height = "55px" src = "icon.png" alt="Logo"> Dalenryder Online File Encryptor</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+		
+			<li class="nav-item">
+            <a class="nav-link" href="#generate">Encrypt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Tools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Info</a>
+          </li>
+         
+        </ul>
+      </div>
+    </nav>
+
+	
+	
+	    <!-- Encrypt Section -->
+    <section id="generate">
+      <div class="container">
+        <h2 class="text-center">Encrypt and Decrypt Files</h2>
+        <hr class="star-primary">
+        
+		
+		<div class="row">
+		
+							
+		
+
+		
+		<div class="col-lg-8 mx-auto">
+            
+
+			<div class="control-group">
+
+              <div class="control-group">
+		<div id="stage" >
+		
+		<div id="intro">
+				<div class="content">
+				
+					<div class="col-lg-12">
+					<br>
+						<h3>Choose what you want to do. Encrypt or decrypt a file in 3 easy steps.</h3>
+						<p>Do not worry, the files are never uploaded to any servers. The encryption happens locally in your browser.</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="step1">
+				<div class="content">
+				
+					<div class="col-lg-12">
+					
+						<a onclick = "ShowEncrypt();" class="button encrypt green btn btn-success1 btn-lg" id ="btnEncrypt" style="width:49%; color:white; background-color: #34495e;">Encrypt a file</a>
+					
+						<a onclick = "ShowDecrypt();" class="button decrypt magenta btn btn-success1 btn-lg" id ="btnDecrypt" style="width:49%; align:right; color:white; background-color: #34495e;">Decrypt a file</a>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+
+			<div id="step2" style = "display:none;" class="col-lg-8 mx-auto">
+			<br><br>
+			 
+			
+				<div id="EncryptFile" class="content if-encrypt">
+					<p>1. Choose File to Encrypt</p>
+
+					<input type="file" id="encrypt-input" class = "btn btn-success1 btn-lg"/>
+				</div>
+
+				<div id="DecryptFile" class="content if-decrypt">
+					<p>1. Choose File to Decrypt</p>
+
+					<input type="file" id="decrypt-input" class = "btn btn-success1 btn-lg"/>
+				</div>
+
+			</div>
+
+			<div id="step3" style = "display:none;" class="col-lg-8 mx-auto">
+			<br>
+				<div class="content if-encrypt">
+					<div id="EncryptFile2" >
+				
+						<div class="form-group floating-label-form-group controls">
+							<p>2. Enter your Encryption Password</p>
+							<input class="wide-control form-control" type="password" placeholder="Encryption Password">
+						</div>
+                   
+						<a class="button process red btn btn-success1 btn-lg" style="width:100%; color:white;">Encrypt File</a>
+					</div>
+				</div>
+
+				<div class="content if-decrypt" >
+					<div id="DecryptFile2" >
+						<div class="form-group floating-label-form-group controls">
+							<p>2. Enter your Decryption Password</p>
+							<input type="password" class = "wide-control form-control" placeholder="Decryption Password"/>
+						</div>
+						<a class="button process red btn btn-success1 btn-lg" style="width:100%; color:white;">Decrypt File</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="step4" style = "display:none;">
+				<br><br>
+				<div class="content">
+					<p>3. Download your file</p>
+					<a class="button download green btn btn-success1 btn-lg" style="width:100%;">Download</a>
+				</div>
+
+			</div>
+		</div>
+		
+		
+		</div></div>
+		
+	
+	
+	
+		</div>
+		
+		
+		
+    </section>
+	
+	
+	
+	
+    <!-- Header Title line-->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <span class="name">Dalenryder Online File Encryptor</span>
+          <hr class="star-light">
+          
+        </div>
+      </div>
+    </header>
+
+    <!-- More tools section -->
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="text-center">More Online Tools</h2>
+        <hr class="star-primary">
+        <div class="row">
+          <div class="col-sm-4 portfolio-item">
+		  <h3>Password Generator</h3>
+				<a href="index.html">
+					<div class="portfolio-link">
+						<div class="caption">
+							<div class="caption-content">
+								<p>Create secure passwords online</p>
+                  
+							</div>
+						</div>
+						<img class="img-fluid" src="img/portfolio/password.png" alt="online password generator">
+					</div>
+				</a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+		  <h3>Online File Encryption</h3>
+			<a href="encrypt.html">
+				<div class="portfolio-link">
+					<div class="caption">
+						<div class="caption-content">
+							<p>Encrypt or decrypt your files online</p>
+						</div>
+					</div>
+					<img class="img-fluid" src="img/portfolio/encrypt.png" alt="online file encryptor">
+				</div>
+			</a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+			<h3>IP Grabber</h3>
+				<a href="ip-grabber.html">
+					<div class="portfolio-link">
+						<div class="caption">
+							<div class="caption-content">
+								<p>Get your public IP Address</p>
+							</div>
+						</div>
+						<img class="img-fluid" src="img/portfolio/ip.png" alt="ip grabber">
+					</div>
+				</a>
+		</div>
+         
+        </div>
+		<br>
+		<div id="amzn-assoc-ad-f8554524-a9e6-45f0-819e-74bdd1ed1093"></div><script async src="http://z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=f8554524-a9e6-45f0-819e-74bdd1ed1093"></script>
+		
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="success" id="about">
+      <div class="container">
+        <h2 class="text-center">About</h2>
+        <hr class="star-light">
+        <div class="row">
+          <div class="col-lg-4 ml-auto">
+             <p>Encrypt files to prevent third-parties from accessing them. Protect the files with a password that you should give the receiver of the file to allow him or her to decrypt the encrypted file. Encrypt and decrypt files in three easy steps.</p>
+          
+			</div>
+          <div class="col-lg-4 mr-auto">
+           <p>Dalenryder Password Generator is a collection of tools that help you to stay safe online. Create safe passwords and more. This is the online version of the password generator. Check out the app or the desktop version for more features and tools.</p>
+          </div>
+          <div class="col-lg-8 mx-auto text-center">
+            <a href="http://dalenryder.com/software/Dalenryder Password Generator/passwordgenerator.php" class="btn btn-lg btn-outline">
+              <i class="fa fa-download"></i>
+              Dalenryder Password Generator
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <div class="footer-above">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col col-md-4">
+              <h3>More</h3>
+              <p><a href="https://dalenryder.com/">Dalenryder Media</a></p>
+			  <p><a href="http://noovy.de/">Noovy Homepage</a></p>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3>Follow and Like</h3>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" aria-label="Facebook" href="https://www.facebook.com/dalenryder/">
+                    <i class="fa fa-fw fa-facebook"></i>
+                  </a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" aria-label="Twitter" href="https://twitter.com/dalenryder">
+                    <i class="fa fa-fw fa-twitter"></i>
+                  </a>
+                </li>
+				
+				 <li class="list-inline-item">
+                  <a class="btn-social btn-outline" aria-label="YouTube" href="https://www.youtube.com/channel/UChreQEUEVhGHH4vgmIjzVzQ">
+                    <i class="fa fa-fw fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3>About</h3>
+              
+			  <p><a href="http://dalenryder.com/info/impressum.php" rel="nofollow">Impressum</a></p>
+			  <p><a href="http://dalenryder.com/info/datenschutz.php" rel="nofollow">Datenschutz</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              &copy; 2020 <a href = "https://maluszczak.de/" >Daniel Maluszczak</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-top d-lg-none">
+      <a class="btn btn-primary page-scroll" aria-label="Scroll Up" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+	
+	<!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	 <!-- Custom styles for this template -->
+    <link href="css/mainstyle.min.css" rel="stylesheet">
+
+	 <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+	
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+		<script src="vendor/jquery/jquery-3.4.1.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/mainjs.min.js"></script>
+	
+	<!-- Generate PSW script -->
+	<script src="generate.js"></script>
+	
+	<!-- Encrypt script -->
+		<script src="encryption/aes.js"></script>
+
+	<script src="../cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="encryption/script.js"></script>
+	
+	
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="http://analytics.dalenryder.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+		
+
+
+  </body>
+
+
+<!-- Mirrored from online-password-generator.dalenryder.com/encrypt.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Jun 2021 19:01:55 GMT -->
+</html>
